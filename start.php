@@ -12,11 +12,7 @@
 	
 	function h5f_init()
 	{
-		$js = elgg_get_simplecache_url('js', 'h5f/h5f');
-		elgg_register_simplecache_view('js/h5f/h5f');
-		elgg_register_js('h5f.h5f', $js);
-		
-		elgg_load_js('h5f.h5f');
+		elgg_require_js(elgg_get_simplecache_url('js', 'h5f/h5f'));
 	}
 	
 	
